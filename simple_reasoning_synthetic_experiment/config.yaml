@@ -1,0 +1,48 @@
+# reproduce
+seed: 42
+
+# model
+vocab_size: 16 
+d_model: 64
+ff_dim: 256
+num_heads: 2
+num_layers: 4
+
+# TF model variants
+linear_attn: False
+residual: True
+mlp: True
+dropout: 0.1
+norm: True
+output_norm: False
+pos: "rotary"
+rotary_theta: 10000
+
+# data generation: to do
+max_variables: 12
+max_parenthesis: 7
+max_seq_len: 64
+test_sample_size: 1000
+
+# training
+device: "cpu" # "cuda" | "cpu"
+lr: 0.001
+num_epoch: 500
+batch_size: 32
+use_wd: True
+wd: 0.0005
+schedule: "constant"
+fresh_sample: True
+label_smoothing: 0.1
+
+# logging
+wandb_log: False
+measurements_every_epoch: 10
+measurements_initial_few_epoch: 10
+print_output: False
+n_save: 1
+up_to_first_save: False
+
+
+# IO
+out_dir: "out"
