@@ -213,8 +213,8 @@ task_templates = [
         type_name="Tree Logging Calculation",
         question_template="""Question: {name} is cutting up wood for his wood-burning stove. Each {pine} tree makes {pine_logs} logs, each {maple} tree makes {maple_logs} logs, and each {walnut} tree makes {walnut_logs} logs. If {name} cuts up {pine_count} {pine} trees, {maple_count} {maple} trees, and {walnut_count} {walnut} trees, how many logs does he get?""",
         deduction_template="""Answer: First find the total number of {pine} logs by multiplying the number of trees by the number of logs per tree: {pine_logs} logs/{pine} * {pine_count} {pine} = <<{pine_logs}*{pine_count}={total_pine}>>{total_pine} logs
-Then do the same thing for the maple trees: {maple_logs} logs/{maple} * {maple_count} {maple} = <<{maple_logs}*{maple_count}={total_maple}>>{total_maple} logs
-And do the same thing for the walnut trees: {walnut_logs} logs/{walnut} * {walnut_count} {walnut} = <<{walnut_logs}*{walnut_count}={total_walnut}>>{total_walnut} logs
+Then do the same thing for the {maple} trees: {maple_logs} logs/{maple} * {maple_count} {maple} = <<{maple_logs}*{maple_count}={total_maple}>>{total_maple} logs
+And do the same thing for the {walnut} trees: {walnut_logs} logs/{walnut} * {walnut_count} {walnut} = <<{walnut_logs}*{walnut_count}={total_walnut}>>{total_walnut} logs
 Finally, add up the number of logs from each type of tree to find the total number: {total_pine} logs + {total_maple} logs + {total_walnut} logs = <<{total_pine}+{total_maple}+{total_walnut}={total}>>{total} logs
 #### {total}""",
         variable_generator=lambda setting: {

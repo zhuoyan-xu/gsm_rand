@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Dict, Set, List, Any
 import re
-from template_v2 import TaskTemplate
+from .template_v2 import TaskTemplate
 from pdb import set_trace as pds
 from pprint import pprint as pp
 
@@ -206,42 +206,48 @@ def print_ascii_tree(graph: ComputationGraph) -> None:
         print("Computation Tree (top-down):")
         print_node_recursive(final_result)
 
+def main():
+    # Example usage
+    from template_v2 import task_templates
+    import random
 
-# Example usage
-from template_v2 import task_templates
-import random
+    index = random.randint(0, len(task_templates) - 1)
+    index = 0 ## zhuoy
+    template = task_templates[index]
+    setting = {
+        "name_format": "original",  # "original" | "symbol"
+        "item_format": "original",  # "original" | "symbol"
+        "flip_number_sign": False,
+        "gen_formula": False,
+        "gen_formula_sample_symbol": False,
+        "few_shot_format": "original",  # "original" | "mixed" | "formula",
+        "target_format": "original",  # "original" | "formula",
+    }
+    example = template.generate(setting)
+    pp(example)
 
-index = random.randint(0, len(task_templates) - 1)
-index = 5 ## zhuoy
-template = task_templates[index]
-setting = {
-    "name_format": "original",  # "original" | "symbol"
-    "item_format": "original",  # "original" | "symbol"
-    "flip_number_sign": False,
-    "gen_formula": False,
-    "gen_formula_sample_symbol": False,
-    "few_shot_format": "original",  # "original" | "mixed" | "formula",
-    "target_format": "original",  # "original" | "formula",
-}
-example = template.generate(setting)
-print(example)
+    variables = template.variable_generator(setting)
+    answer_dict = template.answer_generator(variables)
+    variables.update(answer_dict)
 
-variables = template.variable_generator(setting)
-answer_dict = template.answer_generator(variables)
-variables.update(answer_dict)
+    answer_text = template.deduction_template.format(**variables)
 
-answer_text = template.deduction_template.format(**variables)
+    # answer = example["answer"]
+    # variables = example["variables"]
 
-# answer = example["answer"]
-# variables = example["variables"]
+    # answer = """Answer: Bob sells 5kg of meat every hour they works.
+    # In 9 hours they will sell 5 x 9 = <<5*9=45>>45kg of meat.
+    # Bob will need to sell 540kg of meat.
+    # 540kg / 45kg = <<540/45=12>>12 days"""
+    print(answer_text)
+    graph = parse_computation_graph(answer_text, template, variables)
 
-# answer = """Answer: Bob sells 5kg of meat every hour they works.
-# In 9 hours they will sell 5 x 9 = <<5*9=45>>45kg of meat.
-# Bob will need to sell 540kg of meat.
-# 540kg / 45kg = <<540/45=12>>12 days"""
-print(answer_text)
-graph = parse_computation_graph(answer_text, template, variables)
+    print_ascii_tree(graph)
+    visualize_graph_graphviz(graph)
+    pds()
 
-print_ascii_tree(graph)
-visualize_graph_graphviz(graph)
-pds()
+
+if __name__ == "__main__":
+    main()
+
+
