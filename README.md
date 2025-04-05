@@ -10,3 +10,12 @@ bash ground_truth.sh
 ```
 generate graph and question, deductions in `out/seed42/question_variations.json`.
 save total in `out/question_variations.json`.
+This is target question.
+
+### generate prompts and prepend to target question
+```
+python gen_prompts.py
+```
+save to `out/question_variations_with_context.json`.
+
+
