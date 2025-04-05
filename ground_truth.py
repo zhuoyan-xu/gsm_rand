@@ -1,9 +1,9 @@
 import random
-
+import os
 from pdb import set_trace as pds
 from pprint import pprint as pp
 import argparse
-from utils import ensure_path
+from utils import ensure_path, load_json, save_json
 import json
 
 
@@ -105,10 +105,16 @@ def main():
 
     # Save to JSON file
     output_path = f"out/seed{variable_seed}/question_variations.json"
-    with open(output_path, 'w') as f:
-        json.dump(results, f, indent=2)
+    save_json(results, output_path)
 
-    print(f"Results saved to {output_path}")
+    ### combine into one file
+    total = {}
+    total_path = f"out/question_variations.json"
+    # Try to load existing data if the file exists and is not empty
+    if os.path.isfile(total_path) and os.path.getsize(total_path) > 0:
+            total = load_json(total_path)
+    total.update(results)
+    save_json(total, total_path)
 
 def parse_args():
     parser = argparse.ArgumentParser()

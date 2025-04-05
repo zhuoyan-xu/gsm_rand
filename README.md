@@ -9,3 +9,4 @@ python ground_truth.py
 bash ground_truth.sh
 ```
 generate graph and question, deductions in `out/seed42/question_variations.json`.
+save total in `out/question_variations.json`.
