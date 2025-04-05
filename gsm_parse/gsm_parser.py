@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Dict, Set, List, Any
 import re
-from .template_v2 import TaskTemplate
+from template_v2 import TaskTemplate
 from pdb import set_trace as pds
 from pprint import pprint as pp
 

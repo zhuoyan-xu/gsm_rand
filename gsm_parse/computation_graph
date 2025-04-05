@@ -1,0 +1,30 @@
+// Computation Graph
+digraph {
+	rankdir=BT
+	70 [label=70 shape=box]
+	6 [label=6 shape=box]
+	420 [label=420 shape=ellipse]
+	68 [label=68 shape=box]
+	3 [label=3 shape=box]
+	204 [label=204 shape=ellipse]
+	111 [label=111 shape=box]
+	5 [label=5 shape=box]
+	555 [label=555 shape=ellipse]
+	1179 [label=1179 shape=ellipse]
+	"70_*_6" [label="*" fillcolor=lightgray shape=circle style=filled]
+	70 -> "70_*_6"
+	6 -> "70_*_6"
+	"70_*_6" -> 420
+	"68_*_3" [label="*" fillcolor=lightgray shape=circle style=filled]
+	68 -> "68_*_3"
+	3 -> "68_*_3"
+	"68_*_3" -> 204
+	"111_*_5" [label="*" fillcolor=lightgray shape=circle style=filled]
+	111 -> "111_*_5"
+	5 -> "111_*_5"
+	"111_*_5" -> 555
+	"420_+_204" [label="+" fillcolor=lightgray shape=circle style=filled]
+	420 -> "420_+_204"
+	204 -> "420_+_204"
+	"420_+_204" -> 1179
+}
