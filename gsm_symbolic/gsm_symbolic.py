@@ -8,8 +8,8 @@ from transformers import (
 )
 import torch
 from tqdm import tqdm
-from utils import create_folder
-from config import GSM_SYMBOLIC_MODELS
+# from utils import create_folder
+# from config import GSM_SYMBOLIC_MODELS
 
 
 class KeywordStoppingCriteria(StoppingCriteria):
