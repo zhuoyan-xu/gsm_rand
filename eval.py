@@ -98,7 +98,7 @@ def summarize_main(model_id, question_name):
 
 if __name__ == "__main__":
     import os
-    from config import EVAL_MODELS, EVAL_QUESTION_NAMES
+    # from config import EVAL_MODELS, EVAL_QUESTION_NAMES
 
     os.makedirs("data/results", exist_ok=True)
     question_name = 'Tree_Logging_Calculation'
