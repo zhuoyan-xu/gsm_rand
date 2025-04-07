@@ -38,18 +38,19 @@ def summarize_results(results):
     correct = sum(result["correct"] for result in results)
     accuracy = correct / len(results)
 
-    correct_by_step = {}
-    for result in results:
-        correct_by_step[result["deduction_step"]] = (
-            correct_by_step.get(result["deduction_step"], 0) + result["correct"]
-        )
+    # correct_by_step = {}
+    # for result in results:
+    #     correct_by_step[result["deduction_step"]] = (
+    #         correct_by_step.get(result["deduction_step"], 0) + result["correct"]
+    #     )
+    correct_by_step = None
 
     return accuracy, correct_by_step
 
 
 def main(model_id, question_name):
     if os.path.exists(f"data/results/{question_name}_{model_id}.json"):
-        # print(f"Skipping {question_name}_{model_id} because it already exists")
+        print(f"Skipping {question_name}_{model_id} because it already exists")
         return
 
     seed = 42
@@ -63,12 +64,12 @@ def main(model_id, question_name):
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-    with open(f"data/questions/{question_name}_questions.json", "r") as f:
+    with open(f"out/question_variations_with_context.json", "r") as f:
         questions = json.load(f)
 
     results = []
-    for question in questions:
-        print(question["seed"], " ---> ", question["wording"])
+    for idx, question in enumerate(questions):
+        print(f'idx {idx} -- seed {question["seed"]} ---> {question["wording"]}')
         response = generate_response(model, tokenizer, question["prompt"])
         results.append(
             {
@@ -93,7 +94,7 @@ def summarize_main(model_id, question_name):
         results = json.load(f)
     accuracy, correct_by_step = summarize_results(results)
     print(f"Accuracy: {accuracy:.2f}")
-    print(f"Correct by step: {correct_by_step}")
+    # print(f"Correct by step: {correct_by_step}")
 
 
 if __name__ == "__main__":
