@@ -18,4 +18,14 @@ python gen_prompts.py
 ```
 save to `out/question_variations_with_context.json`.
 
+### run results
+```
+python eval.py
+```
+save to `data/results`
 
+### parse model result
+generate descriptive analysis and tree like ground truth
+```
+python parse_result.py
+```

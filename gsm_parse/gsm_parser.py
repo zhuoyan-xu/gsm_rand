@@ -1,9 +1,10 @@
 from dataclasses import dataclass
 from typing import Dict, Set, List, Any
 import re
-from template_v2 import TaskTemplate
+from .template_v2 import TaskTemplate
 from pdb import set_trace as pds
 from pprint import pprint as pp
+from typing import Dict, Any, Optional
 
 @dataclass
 class Node:
@@ -37,7 +38,9 @@ class ComputationGraph:
 
 
 def parse_computation_graph(
-    answer_text: str, template: TaskTemplate, variables: Dict[str, Any]
+    answer_text: str, 
+    template: Optional[TaskTemplate] = None, 
+    variables: Optional[Dict[str, Any]] = None
 ) -> ComputationGraph:
     """
     Parse answer text into a computation graph where:
@@ -45,13 +48,19 @@ def parse_computation_graph(
     - Edges represent operations between nodes
     """
     graph = ComputationGraph()
-    variable_meanings = extract_variable_meanings(template, variables)
+
+    if template is not None and variables is not None:
+        variable_meanings = extract_variable_meanings(template, variables)
+    else:
+        variable_meanings = {}
 
     # Find all calculations in <<...>> format
     calc_pattern = r"<<(.*?)=(.*?)>>"
     calculations = re.findall(calc_pattern, answer_text)
 
     for expression, result in calculations:
+        # print("expression:", expression)
+        # print("result:", result)
         result = result.strip()
         expression = expression.strip()
 
@@ -59,7 +68,10 @@ def parse_computation_graph(
         # This regex captures numbers and operators
         parts_pattern = r"(\d+)\s*([\+\-\*\/])\s*(\d+)"
         match = re.match(parts_pattern, expression)
+        # print("match:", match)
+        # pds()
         if match:
+            # print(f"match.groups(): =={match.groups()}==")
             num1, operator, num2 = match.groups()
 
             # Add all numbers as nodes

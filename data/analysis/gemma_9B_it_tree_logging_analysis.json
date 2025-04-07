@@ -1,0 +1,52 @@
+{
+    "overall_accuracy": 0.8,
+    "accuracy_by_seed": {
+        "37": 1.0,
+        "42": 1.0,
+        "134": 1.0,
+        "1567": 1.0,
+        "8787": 0.0
+    },
+    "accuracy_by_wording": {
+        "original": 0.8,
+        "LumberYard": 0.8,
+        "ForestManagement": 0.8,
+        "ConstructionSupply": 0.8,
+        "FurnitureMaking": 0.8,
+        "Simplified": 0.8
+    },
+    "counts": {
+        "total_examples": 30,
+        "total_correct": 24,
+        "by_seed": {
+            "37": 6,
+            "42": 6,
+            "134": 6,
+            "1567": 6,
+            "8787": 6
+        },
+        "correct_by_seed": {
+            "37": 6,
+            "42": 6,
+            "134": 6,
+            "1567": 6,
+            "8787": 0
+        },
+        "by_wording": {
+            "original": 5,
+            "LumberYard": 5,
+            "ForestManagement": 5,
+            "ConstructionSupply": 5,
+            "FurnitureMaking": 5,
+            "Simplified": 5
+        },
+        "correct_by_wording": {
+            "original": 4,
+            "LumberYard": 4,
+            "ForestManagement": 4,
+            "ConstructionSupply": 4,
+            "FurnitureMaking": 4,
+            "Simplified": 4
+        }
+    }
+}

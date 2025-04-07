@@ -33,9 +33,9 @@ def extract_final_answer(answer_text: str):
     return answer
     
 
-def wording_variation():
+def wording_variation(variable_seed = 42):
     results = {}
-    graph = False
+    graph = True
     index = 0  ## "Tree Logging Calculation"
     template = task_templates[index]
 
@@ -68,7 +68,7 @@ def wording_variation():
 
     if graph:
         graph = parse_computation_graph(answer_text, template, variables)
-        visualize_graph_graphviz(graph, output_file = f"out/seed{variable_seed}/original_computation_graph")
+        visualize_graph_graphviz(graph, output_file = f"out/seed{variable_seed}/ground_truth/original_computation_graph")
 
 
     for key, val in question_wording.items():
@@ -81,7 +81,7 @@ def wording_variation():
 
         if graph:
             graph = parse_computation_graph(answer_text, template, variables)
-            visualize_graph_graphviz(graph, output_file = f"out/seed{variable_seed}/{key}_computation_graph")
+            visualize_graph_graphviz(graph, output_file = f"out/seed{variable_seed}/ground_truth/{key}_computation_graph")
         
         results[key] = {
             "question": question_text,
@@ -101,7 +101,7 @@ def main():
     # wording_variation()
 
     # Generate and save results
-    results = {variable_seed: wording_variation()}
+    results = {variable_seed: wording_variation(variable_seed = variable_seed)}
 
     # Save to JSON file
     output_path = f"out/seed{variable_seed}/question_variations.json"
