@@ -29,3 +29,4 @@ generate descriptive analysis and tree like ground truth
 ```
 python parse_result.py
 ```
+save to `data/analysis` and `out/`.

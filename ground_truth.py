@@ -101,7 +101,7 @@ def main():
     # wording_variation()
 
     # Generate and save results
-    results = {variable_seed: wording_variation(variable_seed = variable_seed)}
+    results = {str(variable_seed): wording_variation(variable_seed = variable_seed)}
 
     # Save to JSON file
     output_path = f"out/seed{variable_seed}/question_variations.json"
@@ -112,7 +112,7 @@ def main():
     total_path = f"out/question_variations.json"
     # Try to load existing data if the file exists and is not empty
     if os.path.isfile(total_path) and os.path.getsize(total_path) > 0:
-            total = load_json(total_path)
+        total = load_json(total_path)
     total.update(results)
     save_json(total, total_path)
 
