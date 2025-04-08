@@ -74,6 +74,8 @@ def main(model_id, question_name):
         results.append(
             {
                 "sample_id": question["sample_id"],
+                "seed": question["seed"],
+                "wording": question["wording"],
                 "question": question["question"],
                 "deduction": question["deduction"],
                 "prompt": question["prompt"],

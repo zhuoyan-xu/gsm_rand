@@ -7,7 +7,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nCharlie gets 10 toys trees * 90 logs/tree = <<10*90=900>>900 logs from the toys trees.\nCharlie gets 4 shirts trees * 72 logs/tree = <<4*72=288>>288 logs from the shirts trees.\nCharlie gets 6 bottles trees * 62 logs/tree = <<6*62=372>>372 logs from the bottles trees.\nIn total, Charlie gets 900 logs + 288 logs + 372 logs = <<900+288+372=1560>>1560 logs.\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "original"
     },
     {
         "sample_id": 1,
@@ -17,7 +19,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nFirst find the total lumber from the toys trees: 10 toys trees * 90 pieces/tree = <<10*90=900>>900 pieces\nThen find the total lumber from the shirts trees: 4 shirts trees * 72 pieces/tree = <<4*72=288>>288 pieces\nThen find the total lumber from the bottles trees: 6 bottles trees * 62 pieces/tree = <<6*62=372>>372 pieces\nFinally, add up the lumber from all the trees: 900 pieces + 288 pieces + 372 pieces = <<900+288+372=1560>>1560 pieces\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "LumberYard"
     },
     {
         "sample_id": 2,
@@ -27,7 +31,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nFirst find the number of sections from the toys trees: 10 toys trees * 90 sections/tree = <<10*90=900>>900 sections\nThen find the number of sections from the shirts trees: 4 shirts trees * 72 sections/tree = <<4*72=288>>288 sections\nThen find the number of sections from the bottles trees: 6 bottles trees * 62 sections/tree = <<6*62=372>>372 sections\nFinally, add up the sections from all the trees: 900 sections + 288 sections + 372 sections = <<900+288+372=1560>>1560 sections\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "ForestManagement"
     },
     {
         "sample_id": 3,
@@ -37,7 +43,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nFrom the toys trees they will get 90 beams/tree * 10 trees = <<90*10=900>>900 beams\nFrom the shirts trees they will get 72 beams/tree * 4 trees = <<72*4=288>>288 beams\nFrom the bottles trees they will get 62 beams/tree * 6 trees = <<62*6=372>>372 beams\nIn total they will have 900 beams + 288 beams + 372 beams = <<900+288+372=1560>>1560 beams\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "ConstructionSupply"
     },
     {
         "sample_id": 4,
@@ -47,7 +55,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nFrom the toys trees they get 10 toys trees * 90 pieces/tree = <<10*90=900>>900 pieces\nFrom the shirts trees they get 4 shirts trees * 72 pieces/tree = <<4*72=288>>288 pieces\nFrom the bottles trees they get 6 bottles trees * 62 pieces/tree = <<6*62=372>>372 pieces\nIn total they have 900 pieces + 288 pieces + 372 pieces = <<900+288+372=1560>>1560 pieces\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "FurnitureMaking"
     },
     {
         "sample_id": 5,
@@ -57,7 +67,9 @@
         "answer": "1560",
         "response": "Let's think step by step. \nCharlie has 10 toys * 90 units/toy = <<10*90=900>>900 units from toys.\nCharlie has 4 shirts * 72 units/shirt = <<4*72=288>>288 units from shirts.\nCharlie has 6 bottles * 62 units/bottle = <<6*62=372>>372 units from bottles.\nIn total, Charlie has 900 units + 288 units + 372 units = <<900+288+372=1560>>1560 units.\n#### 1560",
         "response_answer": "1560",
-        "correct": true
+        "correct": true,
+        "seed": 37,
+        "wording": "Simplified"
     },
     {
         "sample_id": 6,
@@ -67,7 +79,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nDiana gets 10 apples trees * 65 logs/tree = <<10*65=650>>650 logs from the apples trees.\nDiana gets 2 bottles trees * 54 logs/tree = <<2*54=108>>108 logs from the bottles trees.\nDiana gets 3 pencils trees * 68 logs/tree = <<3*68=204>>204 logs from the pencils trees.\nIn total, Diana gets 650 logs + 108 logs + 204 logs = <<650+108+204=962>>962 logs.\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "original"
     },
     {
         "sample_id": 7,
@@ -77,7 +91,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nFirst find the lumber from the apples trees: 10 apples trees * 65 pieces/tree = <<10*65=650>>650 pieces\nThen find the lumber from the bottles trees: 2 bottles trees * 54 pieces/tree = <<2*54=108>>108 pieces\nThen find the lumber from the pencils trees: 3 pencils trees * 68 pieces/tree = <<3*68=204>>204 pieces\nFinally, add up the lumber from all the trees: 650 pieces + 108 pieces + 204 pieces = <<650+108+204=962>>962 pieces\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "LumberYard"
     },
     {
         "sample_id": 8,
@@ -87,7 +103,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nFirst find the number of sections from the apples trees: 10 trees * 65 sections/tree = <<10*65=650>>650 sections\nThen find the number of sections from the bottles trees: 2 trees * 54 sections/tree = <<2*54=108>>108 sections\nThen find the number of sections from the pencils trees: 3 trees * 68 sections/tree = <<3*68=204>>204 sections\nFinally, add up the sections from all the trees: 650 sections + 108 sections + 204 sections = <<650+108+204=962>>962 sections\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "ForestManagement"
     },
     {
         "sample_id": 9,
@@ -97,7 +115,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nBeams from apples trees: 10 apples trees * 65 beams/tree = <<10*65=650>>650 beams\nBeams from bottles trees: 2 bottles trees * 54 beams/tree = <<2*54=108>>108 beams\nBeams from pencils trees: 3 pencils trees * 68 beams/tree = <<3*68=204>>204 beams\nTotal beams: 650 beams + 108 beams + 204 beams = <<650+108+204=962>>962 beams\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "ConstructionSupply"
     },
     {
         "sample_id": 10,
@@ -107,7 +127,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nPieces from apples trees: 10 trees * 65 pieces/tree = <<10*65=650>>650 pieces\nPieces from bottles trees: 2 trees * 54 pieces/tree = <<2*54=108>>108 pieces\nPieces from pencils trees: 3 trees * 68 pieces/tree = <<3*68=204>>204 pieces\nTotal pieces: 650 pieces + 108 pieces + 204 pieces = <<650+108+204=962>>962 pieces\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "FurnitureMaking"
     },
     {
         "sample_id": 11,
@@ -117,7 +139,9 @@
         "answer": "962",
         "response": "Let's think step by step. \nDiana has 10 apples * 65 units/apple = <<10*65=650>>650 units from apples.\nDiana has 2 bottles * 54 units/bottle = <<2*54=108>>108 units from bottles.\nDiana has 3 pencils * 68 units/pencil = <<3*68=204>>204 units from pencils.\nIn total, Diana has 650 units + 108 units + 204 units = <<650+108+204=962>>962 units.\n#### 962",
         "response_answer": "962",
-        "correct": true
+        "correct": true,
+        "seed": 42,
+        "wording": "Simplified"
     },
     {
         "sample_id": 12,
@@ -127,7 +151,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nPeter gets 6 books trees * 85 logs/tree = <<6*85=510>>510 logs from the books trees.\nPeter gets 2 oranges trees * 80 logs/tree = <<2*80=160>>160 logs from the oranges trees.\nPeter gets 6 bottles trees * 113 logs/tree = <<6*113=678>>678 logs from the bottles trees.\nIn total, Peter gets 510 logs + 160 logs + 678 logs = <<510+160+678=1348>>1348 logs.\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "original"
     },
     {
         "sample_id": 13,
@@ -137,7 +163,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nFirst find the total lumber from the books trees: 6 books trees * 85 pieces/tree = <<6*85=510>>510 pieces\nThen find the total lumber from the oranges trees: 2 oranges trees * 80 pieces/tree = <<2*80=160>>160 pieces\nThen find the total lumber from the bottles trees: 6 bottles trees * 113 pieces/tree = <<6*113=678>>678 pieces\nFinally, add up the lumber from all the trees: 510 pieces + 160 pieces + 678 pieces = <<510+160+678=1348>>1348 pieces\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "LumberYard"
     },
     {
         "sample_id": 14,
@@ -147,7 +175,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nFirst find the number of sections from the books trees: 6 books trees * 85 sections/tree = <<6*85=510>>510 sections\nThen find the number of sections from the oranges trees: 2 oranges trees * 80 sections/tree = <<2*80=160>>160 sections\nThen find the number of sections from the bottles trees: 6 bottles trees * 113 sections/tree = <<6*113=678>>678 sections\nFinally, add up the sections from all the trees: 510 sections + 160 sections + 678 sections = <<510+160+678=1348>>1348 sections\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "ForestManagement"
     },
     {
         "sample_id": 15,
@@ -157,7 +187,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nBeams from books trees: 6 books trees * 85 beams/tree = <<6*85=510>>510 beams\nBeams from oranges trees: 2 oranges trees * 80 beams/tree = <<2*80=160>>160 beams\nBeams from bottles trees: 6 bottles trees * 113 beams/tree = <<6*113=678>>678 beams\nTotal beams: 510 beams + 160 beams + 678 beams = <<510+160+678=1348>>1348 beams\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "ConstructionSupply"
     },
     {
         "sample_id": 16,
@@ -167,7 +199,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nPieces from books trees: 6 books trees * 85 pieces/tree = <<6*85=510>>510 pieces\nPieces from oranges trees: 2 oranges trees * 80 pieces/tree = <<2*80=160>>160 pieces\nPieces from bottles trees: 6 bottles trees * 113 pieces/tree = <<6*113=678>>678 pieces\nTotal pieces: 510 pieces + 160 pieces + 678 pieces = <<510+160+678=1348>>1348 pieces\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "FurnitureMaking"
     },
     {
         "sample_id": 17,
@@ -177,7 +211,9 @@
         "answer": "1348",
         "response": "Let's think step by step. \nPeter has 6 books * 85 units/book = <<6*85=510>>510 units from the books.\nPeter has 2 oranges * 80 units/orange = <<2*80=160>>160 units from the oranges.\nPeter has 6 bottles * 113 units/bottle = <<6*113=678>>678 units from the bottles.\nIn total, Peter has 510 units + 160 units + 678 units = <<510+160+678=1348>>1348 units.\n#### 1348",
         "response_answer": "1348",
-        "correct": true
+        "correct": true,
+        "seed": 134,
+        "wording": "Simplified"
     },
     {
         "sample_id": 18,
@@ -187,7 +223,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nDiana gets 5 candies trees * 60 logs/candies tree = <<5*60=300>>300 logs from the candies trees.\nDiana gets 2 candies trees * 73 logs/candies tree = <<2*73=146>>146 logs from the candies trees.\nDiana gets 4 bananas trees * 117 logs/bananas tree = <<4*117=468>>468 logs from the bananas trees.\nIn total, Diana gets 300 logs + 146 logs + 468 logs = <<300+146+468=914>>914 logs.\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "original"
     },
     {
         "sample_id": 19,
@@ -197,7 +235,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nFirst find the total lumber from the candies trees: 5 candies trees * 60 pieces/tree = <<5*60=300>>300 pieces\nThen find the total lumber from the candies trees: 2 candies trees * 73 pieces/tree = <<2*73=146>>146 pieces\nThen find the total lumber from the bananas trees: 4 bananas trees * 117 pieces/tree = <<4*117=468>>468 pieces\nFinally, add up the lumber from all the trees: 300 pieces + 146 pieces + 468 pieces = <<300+146+468=914>>914 pieces\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "LumberYard"
     },
     {
         "sample_id": 20,
@@ -207,7 +247,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nFirst find the total sections from the candies trees: 5 candies trees * 60 sections/tree = <<5*60=300>>300 sections\nThen find the total sections from the candies trees: 2 candies trees * 73 sections/tree = <<2*73=146>>146 sections\nThen find the total sections from the bananas trees: 4 bananas trees * 117 sections/tree = <<4*117=468>>468 sections\nFinally, add up the sections from all the trees: 300 sections + 146 sections + 468 sections = <<300+146+468=914>>914 sections\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "ForestManagement"
     },
     {
         "sample_id": 21,
@@ -217,7 +259,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nFirst find the number of beams from the candies trees: 60 beams/tree * 5 trees = <<60*5=300>>300 beams\nThen find the number of beams from the other candies trees: 73 beams/tree * 2 trees = <<73*2=146>>146 beams\nThen find the number of beams from the bananas trees: 117 beams/tree * 4 trees = <<117*4=468>>468 beams\nFinally, add up the number of beams from all the trees: 300 beams + 146 beams + 468 beams = <<300+146+468=914>>914 beams\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "ConstructionSupply"
     },
     {
         "sample_id": 22,
@@ -227,7 +271,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nPieces from candies trees: 5 candies trees * 60 pieces/candies tree = <<5*60=300>>300 pieces\nPieces from candies trees: 2 candies trees * 73 pieces/candies tree = <<2*73=146>>146 pieces\nPieces from bananas trees: 4 bananas trees * 117 pieces/bananas tree = <<4*117=468>>468 pieces\nTotal pieces: 300 pieces + 146 pieces + 468 pieces = <<300+146+468=914>>914 pieces\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "FurnitureMaking"
     },
     {
         "sample_id": 23,
@@ -237,7 +283,9 @@
         "answer": "914",
         "response": "Let's think step by step. \nDiana has 5 candies * 60 units/candy = <<5*60=300>>300 units from candies.\nDiana has 2 candies * 73 units/candy = <<2*73=146>>146 units from candies.\nDiana has 4 bananas * 117 units/banana = <<4*117=468>>468 units from bananas.\nIn total, Diana has 300 units + 146 units + 468 units = <<300+146+468=914>>914 units.\n#### 914",
         "response_answer": "914",
-        "correct": true
+        "correct": true,
+        "seed": 1567,
+        "wording": "Simplified"
     },
     {
         "sample_id": 24,
@@ -247,7 +295,9 @@
         "answer": "1103",
         "response": "Let's think step by step. \nMaya gets 7 pencils trees * 50 logs/tree = <<7*50=350>>350 logs from the pencils trees.\nMaya gets 5 bananas trees * 69 logs/tree = <<5*69=345>>345 logs from the bananas trees.\nMaya gets 4 bottles trees * 102 logs/tree = <<4*102=408>>408 logs from the bottles trees.\nIn total, Maya gets 350 logs + 345 logs + 408 logs = <<350+345+408=1003>>1003 logs.\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "original"
     },
     {
         "sample_id": 25,
@@ -257,7 +307,9 @@
         "answer": "1103",
         "response": "Let's think step by step. \nFirst find the total lumber from the pencils trees: 7 pencils trees * 50 pieces/tree = <<7*50=350>>350 pieces\nThen find the total lumber from the bananas trees: 5 bananas trees * 69 pieces/tree = <<5*69=345>>345 pieces\nThen find the total lumber from the bottles trees: 4 bottles trees * 102 pieces/tree = <<4*102=408>>408 pieces\nFinally, add up the lumber from all the trees: 350 pieces + 345 pieces + 408 pieces = <<350+345+408=1003>>1003 pieces\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "LumberYard"
     },
     {
         "sample_id": 26,
@@ -267,7 +319,9 @@
         "answer": "1103",
         "response": "Let's think step by step. \nPencils trees produced: 7 trees * 50 sections/tree = <<7*50=350>>350 sections\nBananas trees produced: 5 trees * 69 sections/tree = <<5*69=345>>345 sections\nBottles trees produced: 4 trees * 102 sections/tree = <<4*102=408>>408 sections\nTotal sections produced: 350 sections + 345 sections + 408 sections = <<350+345+408=1003>>1003 sections\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "ForestManagement"
     },
     {
         "sample_id": 27,
@@ -277,7 +331,9 @@
         "answer": "1103",
         "response": "Let's think step by step. \nFirst find the number of beams from the pencils trees: 7 pencils trees * 50 beams/tree = <<7*50=350>>350 beams\nThen find the number of beams from the bananas trees: 5 bananas trees * 69 beams/tree = <<5*69=345>>345 beams\nThen find the number of beams from the bottles trees: 4 bottles trees * 102 beams/tree = <<4*102=408>>408 beams\nFinally, add up the number of beams from all the trees: 350 beams + 345 beams + 408 beams = <<350+345+408=1003>>1003 beams\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "ConstructionSupply"
     },
     {
         "sample_id": 28,
@@ -287,7 +343,9 @@
         "answer": "1103",
         "response": "Let's think step by step. \nPieces from pencils trees: 7 trees * 50 pieces/tree = <<7*50=350>>350 pieces\nPieces from bananas trees: 5 trees * 69 pieces/tree = <<5*69=345>>345 pieces\nPieces from bottles trees: 4 trees * 102 pieces/tree = <<4*102=408>>408 pieces\nTotal pieces: 350 pieces + 345 pieces + 408 pieces = <<350+345+408=1003>>1003 pieces\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "FurnitureMaking"
     },
     {
         "sample_id": 29,
@@ -297,6 +355,8 @@
         "answer": "1103",
         "response": "Let's think step by step. \nFirst find the total units from the pencils: 7 pencils * 50 units/pencil = <<7*50=350>>350 units\nThen find the total units from the bananas: 5 bananas * 69 units/banana = <<5*69=345>>345 units\nThen find the total units from the bottles: 4 bottles * 102 units/bottle = <<4*102=408>>408 units\nFinally, add up the units from all three items: 350 units + 345 units + 408 units = <<350+345+408=1003>>1003 units\n#### 1003",
         "response_answer": "1003",
-        "correct": false
+        "correct": false,
+        "seed": 8787,
+        "wording": "Simplified"
     }
 ]
