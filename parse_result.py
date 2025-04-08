@@ -51,8 +51,12 @@ def parse_results(
         # answer text parse to graph
         answer_text = item.get('response', "")
         if graph:
-            graph = parse_computation_graph(answer_text, None, None)
-            visualize_graph_graphviz(graph, output_file = f"out/seed{seed}/{model_id}/{wording}_computation_graph")
+            try:
+                graph = parse_computation_graph(answer_text, None, None)
+                visualize_graph_graphviz(graph, output_file = f"out/seed{seed}/{model_id}/{wording}_computation_graph")
+            except Exception as e:
+                print(f"Error parsing graph for sample_id {question['sample_id']} seed {seed}, wording {wording}: {e}")
+                continue
 
     # Calculate accuracies
     accuracy_by_seed = {

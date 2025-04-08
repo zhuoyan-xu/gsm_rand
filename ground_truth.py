@@ -9,7 +9,7 @@ import json
 
 from gsm_parse.template_v2 import task_templates, generate_task_with_context
 from gsm_parse.template_variation import question_wording, plural_wording
-from gsm_parse.gsm_parser import parse_computation_graph, print_ascii_tree, visualize_graph_graphviz
+from gsm_parse.gsm_parser import parse_computation_graph, print_ascii_tree, visualize_graph, visualize_graph_graphviz
 
 setting = {
         "name_format": "original",  # "original" | "symbol"
@@ -52,7 +52,7 @@ def wording_variation(variable_seed = 42):
             json_line = json.dumps(save_variables)
             file.write(json_line + '\n')
 
-    pp(variables)
+    # pp(variables)
     question_text = template.question_template.format(**variables)
 
     print(f"question_text: {question_text}")

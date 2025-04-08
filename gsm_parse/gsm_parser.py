@@ -30,11 +30,11 @@ class ComputationGraph:
             self.nodes[value] = Node(value, is_input, entity_name)
             self.edges[value] = []
 
-    def add_edge(self, source1: str, source2: str, operation: str, target: str) -> None:
-        self.edges[target].append((source1, source2, operation))
+    def add_edge(self, sources: list[str], operation: str, target: str) -> None:
+        self.edges[target].append((sources, operation))
 
     def get_parents(self, node_value: str) -> List[str]:
-        return [src1 for src1, _, _ in self.edges[node_value]]
+        return [src[0] for src, _ in self.edges[node_value]]
 
 
 def parse_computation_graph(
@@ -59,34 +59,37 @@ def parse_computation_graph(
     calculations = re.findall(calc_pattern, answer_text)
 
     for expression, result in calculations:
-        # print("expression:", expression)
-        # print("result:", result)
         result = result.strip()
         expression = expression.strip()
 
-        # Parse the expression (assuming format: num1 operator num2)
+        # Parse the expression (general case: num1 operator num2 operator num3 ...)
         # This regex captures numbers and operators
-        parts_pattern = r"(\d+)\s*([\+\-\*\/])\s*(\d+)"
-        match = re.match(parts_pattern, expression)
-        # print("match:", match)
-        # pds()
-        if match:
-            # print(f"match.groups(): =={match.groups()}==")
-            num1, operator, num2 = match.groups()
+        parts_pattern = r"(\d+|\+|\-|\*|\/)"
+        parts = re.findall(parts_pattern, expression)
+
+        if parts:
+            # Separate numbers and operators
+            numbers = [part for part in parts if part.isdigit()]
+            operators = [part for part in parts if not part.isdigit()]
+
 
             # Add all numbers as nodes
-            graph.add_node(
-                num1, is_input=True, entity_name=variable_meanings.get(num1, "")
-            )
-            graph.add_node(
-                num2, is_input=True, entity_name=variable_meanings.get(num2, "")
-            )
+            for num in numbers:
+                graph.add_node(
+                    num, is_input=True, entity_name=variable_meanings.get(num, "")
+                )
             graph.add_node(
                 result, is_input=False, entity_name=variable_meanings.get(result, "")
             )
 
-            # Add the computation edge
-            graph.add_edge(num1, num2, operator, result)
+            # Add the computation edge (link all numbers to the result)
+            if len(operators) > 1:
+                if operators[0] != operators[1]:
+                    print(f"multiple Operators mismatch: {operators}")
+                    assert False
+                # If there's only one operator, link directly
+            graph.add_edge(numbers, operators[0], result)
+
 
     return graph
 
@@ -136,14 +139,14 @@ def visualize_graph_graphviz(
 
     # Add edges with operation labels
     for target, edges in graph.edges.items():
-        for src1, src2, op in edges:
+        for sources, op in edges:
             # Create an invisible operation node to show the operator
-            op_node = f"{src1}_{op}_{src2}"
+            op_node = f"{sources[0]}_{op}_{sources[1]}"
             dot.node(op_node, op, shape="circle", style="filled", fillcolor="lightgray")
 
             # Connect source nodes to operation node
-            dot.edge(src1, op_node)
-            dot.edge(src2, op_node)
+            for src in sources:
+                dot.edge(src, op_node)
             # Connect operation node to target
             dot.edge(op_node, target)
 
